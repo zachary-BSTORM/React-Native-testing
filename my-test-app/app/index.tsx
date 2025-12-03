@@ -1,5 +1,5 @@
 import { TodoProvider } from "./context/todoContext";
-import useTodoContext from "./hooks-perso/useTodoContext";
+import {useTodoContext} from "./hooks-perso/useTodoContext";
 import { Text,StyleSheet,View } from "react-native";
 
 export default function Index() {
