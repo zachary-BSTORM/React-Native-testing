@@ -1,5 +1,5 @@
 import { describe, test, expect, beforeEach } from "@jest/globals";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { TodoProvider, TodoContext } from "@/app/context/todoContext";
 import { useContext } from "react";
 import { Todo } from "@/app/models/todo";
