@@ -19,13 +19,19 @@ describe("TodoContext (avec react-test-renderer)", () => {
   let contextValue: any;
 
   const renderWithProvider = () => {
+
     act(() => {
+
       TestRenderer.create(
+
         <TodoProvider>
           <TestConsumer onUpdate={(ctx) => (contextValue = ctx)} />
         </TodoProvider>
+
       );
+
     });
+
   };
 
   test("fournit une liste vide par défaut", () => {
@@ -83,4 +89,5 @@ describe("TodoContext (avec react-test-renderer)", () => {
 
     expect(contextValue.todos[0]).toEqual(updated);
   });
+  
 });
